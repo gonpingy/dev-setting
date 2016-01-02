@@ -1,0 +1,8 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  tasks:
+    # update homebrew
+    - name: update homebrew
+      homebrew: update_homebrew=yes
