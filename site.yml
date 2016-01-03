@@ -5,3 +5,4 @@
   roles:
     - brew
     - brew-cask
+    - git

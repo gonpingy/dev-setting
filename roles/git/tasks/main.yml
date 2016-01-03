@@ -1,0 +1,2 @@
+- name: .gitconfigを配置
+  template: src=.gitconfig.j2 dest=~/.gitconfig
