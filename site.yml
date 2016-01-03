@@ -4,3 +4,4 @@
   sudo: no
   roles:
     - brew
+    - brew-cask

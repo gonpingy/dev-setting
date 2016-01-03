@@ -1,0 +1,6 @@
+- name: パッケージの設定があればインストール
+  homebrew_cask:
+    name="{{ item.name }}"
+    state="{{ item.state | default('present') }}"
+  with_items: packages
+  when: packages

@@ -1,0 +1,12 @@
+# インストールするパッケージ
+packages:
+  - { name: android-studio }
+  - { name: dockertoolbox }
+  - { name: dropbox }
+  - { name: evernote }
+  - { name: google-chrome }
+  - { name: iterm2 }
+  - { name: java }
+  - { name: skitch }
+  - { name: skype }
+  - { name: virtualbox }

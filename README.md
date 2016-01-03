@@ -8,7 +8,7 @@ sudo pip install ansible
 ## 実行
 
 ```
-ansible-playbook site.yml -i hosts
+HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook site.yml -i hosts
 ```
 
 ## 参考

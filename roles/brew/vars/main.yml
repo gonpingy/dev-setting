@@ -1,5 +1,5 @@
-# インストールするhomebrewパッケージ
-homebrew_packages:
+# インストールするパッケージ
+packages:
   - { name: git }
   - { name: mysql }
   - { name: node }
