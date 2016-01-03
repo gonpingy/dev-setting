@@ -1,0 +1,10 @@
+# インストールするhomebrewパッケージ
+homebrew_packages:
+  - { name: git }
+  - { name: mysql }
+  - { name: node }
+  - { name: php56 }
+  - { name: python }
+  - { name: tmux }
+  - { name: tree }
+  - { name: wget }

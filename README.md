@@ -8,7 +8,7 @@ sudo pip install ansible
 ## 実行
 
 ```
-ansible-playbook localhost.yml -i hosts
+ansible-playbook site.yml -i hosts
 ```
 
 ## 参考

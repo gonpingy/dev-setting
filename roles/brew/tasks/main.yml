@@ -1,0 +1,23 @@
+- name: brewの存在チェック
+  register: result
+  ignore_errors: true
+  command: which brew
+
+- name: brewがインストールされていなければダウンロード
+  get_url: url=https://raw.githubusercontent.com/Homebrew/install/master/install dest=/tmp/brew_install
+  when: result | failed
+
+- name: brewがインストールされていなければインストール
+  command: ruby /tmp/brew_install
+  when: result | failed
+
+- name: homebrewのアップデート
+  homebrew: update_homebrew=yes
+
+- name: パッケージの設定があれば、homebrewパッケージをインストール
+  homebrew:
+    name="{{ item.name }}"
+    state="{{ item.state | default('installed') }}"
+    install_options="{{ item.install_options | default('') }}"
+  with_items: homebrew_packages
+  when: homebrew_packages
