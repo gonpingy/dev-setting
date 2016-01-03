@@ -1,5 +1,0 @@
-- name: ~/.sshを作成
-  file: path=~/.ssh state=directory mode=700
-
-- name: .ssh/configを配置
-  template: src=config.j2 dest=~/.ssh/config

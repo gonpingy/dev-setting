@@ -1,0 +1,32 @@
+- name: .bash_profileを配置
+  copy: src=.bash_profile dest=~/.bash_profile
+
+- name: .bashrcを配置
+  copy: src=.bashrc dest=~/.bashrc
+
+- name: .inputrcを配置
+  copy: src=.inputrc dest=~/.inputrc
+
+- name: .gitconfigを配置
+  template: src=.gitconfig.j2 dest=~/.gitconfig
+
+- name: ~/.sshを作成
+  file: path=~/.ssh state=directory mode=700
+
+- name: .ssh/configを配置
+  template: src=config.j2 dest=~/.ssh/config
+
+- name: .tmux.confを配置
+  copy: src=.tmux.conf dest=~/.tmux.conf
+
+- name: NeoBundleをダウンロード
+  get_url: url=https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh dest=/tmp/neobundle_install.sh
+
+- name: NeoBundleをインストール
+  shell: sh /tmp/neobundle_install.sh
+
+- name: .vimrcを配置
+  copy: src=.vimrc dest=~/.vimrc
+
+# - name: .bash_profileを反映
+#   command: source ~/.bash_profile

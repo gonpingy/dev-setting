@@ -5,5 +5,4 @@
   roles:
     - brew
     - brew-cask
-    - ssh
-    - git
+    - dotfiles
