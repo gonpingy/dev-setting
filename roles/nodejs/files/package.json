@@ -1,0 +1,24 @@
+{
+  "name": "gonpingy-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "taskrunner": "./node_modules/.bin/gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-istanbul": "^0.10.0",
+    "gulp-mocha": "^2.1.3",
+    "gulp-webserver": "^0.9.1",
+    "phantomjs": "^1.9.18",
+    "should": "^7.1.0",
+    "sinon": "^1.17.0",
+    "supertest": "^1.1.0"
+  }
+}

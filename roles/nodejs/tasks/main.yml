@@ -1,0 +1,11 @@
+- name: ~/nodejsを作成
+  file: path=~/nodejs state=directory
+
+- name: ~/nodejs/package.jsonを配置
+  copy: src=package.json dest=~/nodejs/package.json
+
+- name: ~/nodejs/.eslintrcを配置
+  copy: src=.eslintrc dest=~/nodejs/.eslintrc
+
+- name: ~/nodejs/gulpfile.jsを配置
+  copy: src=gulpfile.js dest=~/nodejs/gulpfile.js
