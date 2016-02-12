@@ -1,0 +1,14 @@
+- name: composerの存在チェック
+  register: result
+  ignore_errors: true
+  shell: which composer
+
+- name: composerがインストールされていなければインストール
+  shell: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+  when: result | failed
+
+- name: ~/phpを作成
+  file: path=~/php state=directory
+
+- name: ~/php/composer.jsonを配置
+  copy: src=composer.json dest=~/php/composer.json

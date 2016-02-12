@@ -1,0 +1,15 @@
+{
+    "name": "gonpingy/dev",
+    "require-dev": {
+        "phpmd/phpmd": "@stable",
+        "phpunit/phpunit": "@stable",
+        "squizlabs/php_codesniffer": "@stable"
+    },
+    "authors": [
+        {
+            "name": "Hiroyuki Abe",
+            "email": "gonpingy@gmail.com"
+        }
+    ],
+    "require": {}
+}
