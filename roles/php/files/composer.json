@@ -1,6 +1,7 @@
 {
     "name": "gonpingy/dev",
     "require-dev": {
+        "mockery/mockery": "@stable",
         "phpmd/phpmd": "@stable",
         "phpunit/phpunit": "@stable",
         "squizlabs/php_codesniffer": "@stable"
