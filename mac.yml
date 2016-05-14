@@ -5,5 +5,6 @@
     - brew
     - brew-cask
     - dotfiles
+    - apache
     - php
     - nodejs
